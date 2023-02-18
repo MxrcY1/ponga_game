@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player1 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         Vector2 mPos = Input.mousePosition;
-        if (mPos.x < Screen.width / 2)
+        if (mPos.x > Screen.width / 2)
         {
             float prevX = transform.position.x;
             Vector2 nextPos = Camera.main.ScreenToWorldPoint(mPos);
